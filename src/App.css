@@ -1,38 +1,124 @@
+* {
+  margin: 0;
+  background-color: black;
+}
+
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  background: black;
+  
+  display: grid;
+  grid-template-columns: 10vw 700px 500px;
+  grid-template-rows: 4vh 120px 3vh 480px;
+  grid-auto-flow: column;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title {
+  color: gray;
+  margin: 0;
+
+  grid-row: 2;
+  grid-column: 2;
+
+  background-image: url("steel.jpeg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+
+}
+#directions {
+  grid-row: 2;
+  grid-column: 3;
+  color: white;
+  text-align: left;
+  align-self:flex-end;
+
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#imageBox {
+  width: 700px;
+  height: auto;
+  z-index: 0;
+  
+  grid-row: 4;
+  grid-column: 2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.circle {
+  position: relative;
+  background-color: red;
+  border: solid red;
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.circle1{
+  top: -310px;
+  left: 608px;
+}
+
+.circle3{
+  top: -290px;
+  left: 442px;
+}
+
+#scoreboard {
+  color: white;
+  grid-row: 4;
+  grid-column: 3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 12px;
+}
+
+.cityOnBoard {
   color: white;
+  display: flex;
+  padding: 0px;
+  height: 45px;
+  width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+#note {
+  color: white;
+  grid-row: 5;
+  grid-column: 2;
+  justify-self:left;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#revealNote {
+  display: none;
+}
+
+#note:hover #revealNote  {
+  display: block;
+}
+
+button {
+  grid-row: 5;
+  grid-column: 3;
+  color: white;
+  width: 100px;
+}
+
+
+h4{
+  margin-left: 0px;
 }
