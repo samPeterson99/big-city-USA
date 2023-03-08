@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/big-city-USA/static/css/main.2b2ddf3d.css",
+    "main.js": "/big-city-USA/static/js/main.b86146f5.js",
+    "static/media/states.png": "/big-city-USA/static/media/states.16ceda60af86eb344549.png",
+    "static/media/steel.jpeg": "/big-city-USA/static/media/steel.69dc29a00211671f0ce9.jpeg",
+    "index.html": "/big-city-USA/index.html",
+    "main.2b2ddf3d.css.map": "/big-city-USA/static/css/main.2b2ddf3d.css.map",
+    "main.b86146f5.js.map": "/big-city-USA/static/js/main.b86146f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b2ddf3d.css",
+    "static/js/main.b86146f5.js"
+  ]
+}
