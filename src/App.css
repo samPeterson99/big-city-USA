@@ -8,11 +8,11 @@
   margin: 0;
   padding: 0;
   background: black;
+ width: 700px;
+ margin: auto;
   
-  display: grid;
-  grid-template-columns: 10vw 700px 500px;
-  grid-template-rows: 4vh 120px 3vh 480px;
-  grid-auto-flow: column;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -20,8 +20,7 @@
   color: gray;
   margin: 0;
 
-  grid-row: 2;
-  grid-column: 2;
+
 
   background-image: url("steel.jpeg");
   -webkit-background-clip: text;
@@ -31,23 +30,22 @@
 
 }
 #directions {
-  grid-row: 2;
-  grid-column: 3;
+
   color: white;
   text-align: left;
   align-self:flex-end;
+  width: 300px;
 
   font-size: 14px;
-  margin-bottom: 20px;
 }
 
 #imageBox {
   width: 700px;
   height: auto;
   z-index: 0;
-  
-  grid-row: 4;
-  grid-column: 2;
+
+  margin-bottom: 0;
+
 }
 
 img {
@@ -57,7 +55,7 @@ img {
 }
 
 .circle {
-  position: relative;
+  position: absolute;
   background-color: red;
   border: solid red;
   z-index: 3;
@@ -83,8 +81,11 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 450px;
   margin: 0px;
   padding: 12px;
+  border: 1px solid grey;
+  width: 650px;
 }
 
 .cityOnBoard {
